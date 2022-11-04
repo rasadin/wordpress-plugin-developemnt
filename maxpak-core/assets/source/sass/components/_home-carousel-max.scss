@@ -1,0 +1,89 @@
+.shop-slider {}
+.shop-slider .owl-carousel {}
+.shop-slider .owl-carousel .textoverlay {
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 37%;
+}
+.shop-slider .owl-carousel .textoverlay h2 {
+    color: #000000;
+    font-size: 43px;
+    font-weight: 500;
+    letter-spacing: 0;
+    position: relative;
+    line-height: 48px;
+}
+.shop-slider .owl-carousel .textoverlay p:empty {
+    display: none;
+}
+.shop-slider .owl-carousel .textoverlay a {
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: #006937;
+    border-radius: 3px;
+    padding: 9px 54px;
+    margin: 20px 0 0;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.shop-slider .owl-carousel .textoverlay a:hover {
+    background: #00a456;
+
+}
+.shop-slider .owl-carousel .owl-nav {}
+.shop-slider .owl-carousel .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    height: 20px;
+    width: 28px;
+    outline: none;
+    font-size: 18px;
+}
+.shop-slider .owl-carousel .owl-nav button:hover {
+    background: transparent;
+    color: #006937;
+}
+.shop-slider .owl-carousel .owl-nav button::before {
+    content: "";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    transition: 0.3s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    background-size: 28px 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 28px;
+}
+.shop-slider .owl-carousel .owl-nav button:hover::before {
+    transform: scale(1.1);
+    filter: invert(42%) sepia(47%) saturate(4688%) hue-rotate(131deg) brightness(94%) contrast(101%);
+}
+.shop-slider .owl-carousel .owl-nav button span {
+    opacity: 0;
+}
+.shop-slider .owl-carousel .owl-nav button.owl-prev {
+    left: 95px;
+}
+.shop-slider .owl-carousel .owl-nav button.owl-prev::before {
+    background-image: url("../img/left.png");
+}
+.shop-slider .owl-carousel .owl-nav button.owl-next {
+    right: 95px;
+}
+.shop-slider .owl-carousel .owl-nav button.owl-next::before {
+    background-image: url("../img/right.png");
+    right: 0;
+}
