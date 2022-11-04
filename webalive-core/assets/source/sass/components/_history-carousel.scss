@@ -1,0 +1,70 @@
+.slick-carousel img {
+    width: 200px;
+}
+.history-block{
+    padding: 50px 0;
+    .arrow-block {
+        display: inline-block;
+        width: 15px;
+        vertical-align: middle;
+        .history-pagination{
+            margin-top: 40px;
+            transform: rotate(-90deg);
+            display: flex;
+           span{
+               font-size: 19px;
+               color: #bbb;
+               padding: 0 2px;
+               &.current{
+                   color: #000;
+               }
+           }
+
+        }
+        .history-line{
+            height: 320px;
+            width: 1px;
+            background: rgba(112,112,112, 0.2);
+            margin: 20px auto;
+        }
+        button{
+            border: 0;
+            padding: 0;
+            background: none;
+            display: block;
+        }
+    }
+    .history-year{
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 15px;
+        ul.year{
+            list-style-type: none;
+            padding: 0;
+            li{
+                font-size: 16px;
+                padding: 10px 0;
+                color: rgba(0,0,0,0.2);
+                &.current{
+                    font-size: 20px;
+                    color: #000;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .history-carousel{
+        max-width: 530px;
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 75px;
+        .item {
+            opacity: 0.2;
+            p {
+                font-size: 17px;
+                line-height: 27px;
+            }
+        }
+    }
+
+}

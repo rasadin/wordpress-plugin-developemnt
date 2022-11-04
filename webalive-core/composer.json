@@ -1,0 +1,7 @@
+{
+    "name": "rabiul/webalive2019-core",
+    "minimum-stability": "stable",
+    "require": {
+        "zohocrm/php-sdk": "^2.1"
+    }
+}

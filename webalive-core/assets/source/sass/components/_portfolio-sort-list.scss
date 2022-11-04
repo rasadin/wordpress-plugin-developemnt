@@ -1,0 +1,125 @@
+ul.work-filter {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  li{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 0 4px 0;
+    cursor: pointer;
+    margin-right: 38px;
+    color: #717171;
+    &.current{
+      font-weight: 600;
+      color: #000;
+    }
+    &.current{
+      border-bottom: 2px solid #000;
+    }
+  }
+}
+
+.work-item{
+  margin-bottom: 60px;
+  > .row{
+    margin: 0;
+    > div{
+      padding: 0;
+    }
+  }
+  background: #fff;
+  .work-details-wrap {
+    padding-left: 30px;
+    >a{
+      //color: #000;
+      //position: absolute;
+      //bottom: 60px;
+    }
+  }
+  .work-item-description{
+    position: relative;
+    padding: 64px 75px 75px 52px;
+    height: 100%;
+    overflow: hidden;
+    .work-category{
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        max-width: 475px;
+        height: 1px;
+        background: #000;
+        top: 12px;
+      }
+      span{
+        text-transform: uppercase;
+        font-family: 'Gilroy';
+        background: #fff;
+        position: relative;
+        padding: 0 12px 0 0;
+        font-weight: 700;
+        letter-spacing: 2px;
+        display: inline-block;
+      }
+    }
+    .work-title{
+      margin-top: 30px;
+      padding-bottom: 26px;
+      h3{
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+
+    .work-data{
+      padding-top: 20px;
+      padding-bottom: 25px;
+      border-top: 1px solid rgba(112,112,112, 0.25);
+      border-bottom: 1px solid rgba(112,112,112,.25);
+      margin-bottom: 27px;
+      .row{
+        justify-content: space-between;
+      }
+      h5{
+        font-size: 18px;
+        font-family: Gilroy;
+        padding-top: 0;
+        margin-bottom: 7px;
+      }
+      p{
+        font-size: 15px;
+        margin-bottom: 0;
+      }
+    }
+    a{
+      font-size: 18px;
+      font-family: Gilroy;
+      color: #000;
+      border-bottom: 1px solid #000;
+      padding-bottom: 5px;
+      &:hover{
+        border-color: #f47521;
+      }
+    }
+  }
+  .work-item-img{
+    overflow: hidden;
+    height: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: all ease-in-out .4s;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+}

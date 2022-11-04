@@ -1,0 +1,68 @@
+.webalive-history-tab {
+    display: flex;
+    .history-block{
+        padding: 5px 0 0 0;
+        .history-line{
+            height: 540px;
+            position: relative;
+            &:before{
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: #000;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 0;
+                left: -4px;
+            }
+        }
+    }
+    .hide-image {
+        height: 0;
+        opacity: 0;
+    }
+
+    .image.active {
+        height: auto;
+        opacity: 1;
+        transition: all ease-in-out .8s;
+        img{
+            width: 100%;
+            float: right;
+        }
+    }
+    .history-pills{
+        width: 35%;
+        padding: 0 50px;
+        h5{
+            transition: all ease-in-out .2s;
+            height: 100%;
+            max-width: 321px;
+        }
+        p{
+            line-height: 25px;
+        }
+        .pills {
+            cursor: pointer;
+            opacity: 0.3;
+            transition: all ease-in-out .2s;
+            &.active {
+                opacity: 1;
+                h5{
+                    font-size: 30px;
+                    padding-top: 0;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    .history-content{
+        width: 65%;
+    }
+}
+.webalive-history-tab-carousal {
+    margin-left: auto;
+    padding: 140px 0 0 260px !important;
+    max-height: 900px;
+    background: #F8F8F9;
+}

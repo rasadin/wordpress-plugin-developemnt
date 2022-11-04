@@ -1,0 +1,74 @@
+.webalive-offgrid-canvas {
+    position: relative;
+    width: 100%;
+    min-height: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    z-index: 10;
+
+    .play-btn {
+        width: 75px;
+        height: 75px;
+        background: #f2f2f2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.2s all;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        &:hover {
+            background: #f47521;
+            i{
+                color: #fff;
+            }
+        }
+    }
+}
+.offgrid-video-player {
+    padding: 50px 40px;
+    background: #fff;
+    position: absolute;
+    width: 1200px;
+    max-width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    top: 0;
+    left: auto;
+    right: 0px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    iframe {
+        width: 100%;
+        height: 800px;
+    }
+    .frame-close {
+        position: absolute;
+        background: url("../img/close.png");
+        width: 75px;
+        top: 15px;
+        right: 20px;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.7;
+        }
+        &::before{
+            content: "Close";
+            text-transform: uppercase;
+            margin-right: 9px;
+            letter-spacing: 0.5px;
+
+        }
+    }
+}
