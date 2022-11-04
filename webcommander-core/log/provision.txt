@@ -1,0 +1,9 @@
+Array
+(
+    [client_id] => ad2fd808ce6a40c0b5185f9c492a1135
+    [client_secret] => 7267e71486d747b8864f5259fcba435c
+    [access_token] => 2c4d3c74e02d4c5d80ef495634d89fd4
+    [refresh_token] => 1ded8b73ea6a4a4ea9bb0859679b8571
+    [code] => 8a486532542147a9a7da2168640db68d
+    [url] => http://trial-pps.webcommander.biz/
+)
