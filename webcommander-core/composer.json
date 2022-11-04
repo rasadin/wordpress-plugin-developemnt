@@ -1,0 +1,22 @@
+{
+    "name": "rabiul/wp-plugin-boilerplate",
+    "description": "A boilerpalte for WordPress plugin development",
+    "authors": [
+        {
+            "name": "Rabiul Islam",
+            "email": "robicse11127@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "WCC\\Admin\\": "admin/",
+            "WCC\\Blocks\\": "blocks/",
+            "WCC\\Front\\": "public/",
+            "WCC\\Libraries\\": "libraries/",
+            "Webmascot\\": "libraries/provision-sdk/src"
+            
+        }
+    }
+}
